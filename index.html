@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Natasha - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero">Charles Natasha</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Charles Natasha</h1>
+            <p class="hero-subtitle">Data Analyst | Turning Data into Insights</p>
+            <p class="hero-description">
+                I specialize in Excel, SQL, Python, and Power BI to extract meaningful insights from data.
+                Passionate about solving complex problems and telling compelling stories with data.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="assets/portfolio.pdf" class="btn btn-outline" download>Download CV</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-shape"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate data analyst with a keen eye for detail and a drive to uncover actionable insights 
+                        from complex datasets. With a strong foundation in statistical analysis and data visualization, 
+                        I transform raw data into compelling stories that inform business decisions.
+                    </p>
+                    <p>
+                        My approach combines technical expertise with creative problem-solving. Whether it's building 
+                        dynamic dashboards, optimizing SQL queries, or analyzing trends with Python, I'm committed to 
+                        delivering solutions that drive measurable impact.
+                    </p>
+                    <h3>Core Values</h3>
+                    <ul class="values-list">
+                        <li>📊 Data-Driven Decision Making</li>
+                        <li>🎯 Accuracy and Attention to Detail</li>
+                        <li>💡 Creative Problem Solving</li>
+                        <li>🚀 Continuous Learning and Growth</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="10">0</h3>
+                        <p class="stat-label">+  Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="5">0</h3>
+                        <p class="stat-label">+ Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="50">0</h3>
+                        <p class="stat-label">+ Data Models Built</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <!-- Excel -->
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Excel</h3>
+                    <p class="skill-description">Advanced formulas, PivotTables, Dashboards</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                    <span class="progress-text">95%</span>
+                </div>
+
+                <!-- SQL -->
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>SQL</h3>
+                    <p class="skill-description">Querying, Joins, Data Modeling</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <span class="progress-text">90%</span>
+                </div>
+
+                <!-- Python -->
+                <div class="skill-card">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p class="skill-description">Pandas, NumPy, Matplotlib, Seaborn</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <span class="progress-text">85%</span>
+                </div>
+
+                <!-- Power BI -->
+                <div class="skill-card">
+                    <div class="skill-icon">📈</div>
+                    <h3>Power BI & Tableau</h3>
+                    <p class="skill-description">Dashboard Design, DAX, Data Visualization</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%"></div>
+                    </div>
+                    <span class="progress-text">88%</span>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Tools & Platforms</h3>
+                    <p class="skill-description">Git, VS Code, Jupyter, Google Analytics</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 92%"></div>
+                    </div>
+                    <span class="progress-text">92%</span>
+                </div>
+
+                <!-- Statistics -->
+                <div class="skill-card">
+                    <div class="skill-icon">📉</div>
+                    <h3>Statistics</h3>
+                    <p class="skill-description">Hypothesis Testing, Regression, A/B Testing</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 87%"></div>
+                    </div>
+                    <span class="progress-text">87%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="powerbi">Power BI</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="powerbi">
+                    <div class="project-image">
+                        <div class="project-placeholder">Sales Dashboard</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sales Analytics Dashboard</h3>
+                        <p>
+                            Created an interactive Power BI dashboard tracking quarterly sales performance, 
+                            regional trends, and customer segments. Features real-time data updates and 
+                            custom KPI metrics.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-badge">Power BI</span>
+                            <span class="tool-badge">SQL</span>
+                            <span class="tool-badge">DAX</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com" class="btn btn-small btn-primary">GitHub</a>
+                            <a href="#" class="btn btn-small btn-secondary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="python">
+                    <div class="project-image">
+                        <div class="project-placeholder">Customer Analysis</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Churn Prediction Model</h3>
+                        <p>
+                            Developed a Python-based machine learning model to predict customer churn using 
+                            historical behavioral data. Achieved 87% accuracy and identified key retention factors.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-badge">Python</span>
+                            <span class="tool-badge">Pandas</span>
+                            <span class="tool-badge">Scikit-learn</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com" class="btn btn-small btn-primary">GitHub</a>
+                            <a href="#" class="btn btn-small btn-secondary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="sql">
+                    <div class="project-image">
+                        <div class="project-placeholder">Database Optimization</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Database Design & Optimization</h3>
+                        <p>
+                            Designed and optimized a normalized relational database for an e-commerce platform. 
+                            Improved query performance by 65% and automated reporting processes.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-badge">SQL</span>
+                            <span class="tool-badge">MySQL</span>
+                            <span class="tool-badge">Indexing</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com" class="btn btn-small btn-primary">GitHub</a>
+                            <a href="#" class="btn btn-small btn-secondary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="powerbi">
+                    <div class="project-image">
+                        <div class="project-placeholder">HR Analytics</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HR Analytics & Workforce Dashboard</h3>
+                        <p>
+                            Built comprehensive HR analytics dashboard providing insights into employee 
+                            performance, turnover trends, and recruitment metrics. Supported strategic HR decisions.
+                        </p>
+                        <div class="project-tools">
+                            <span class="tool-badge">Power BI</span>
+                            <span class="tool-badge">Excel</span>
+                            <span class="tool-badge">Data Modeling</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com" class="btn btn-small btn-primary">GitHub</a>
+                            <a href="#" class="btn btn-small btn-secondary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:charles@example.com">charles@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💻</span>
+                        <div>
+                            <p class="contact-label">Social</p>
+                            <div class="social-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.043-8.837 0-9.766h3.554v1.381l-.022.034h.022v-.034c.431-.665 1.199-1.61 2.920-1.61 2.134 0 3.731 1.405 3.731 4.426v5.569zM5.337 8.855c-1.144 0-1.915-.762-1.915-1.715 0-.955.77-1.715 1.916-1.715.846 0 1.915.76 1.915 1.715 0 .953-.769 1.715-1.916 1.715z M3.585 20.452h3.554V10.686H3.585v9.766zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7 1.5-1.5 3-5 3-5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <p class="contact-label">Based In</p>
+                            <p>New York, USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Placeholder) -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Others Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Charles delivered exceptional insights from our data. The dashboards transformed 
+                        how we make business decisions."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <p class="author-name">John Doe</p>
+                            <p class="author-title">CEO, Tech Corp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Professional, detail-oriented, and incredibly knowledgeable. I highly recommend 
+                        Charles for any data analytics project."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <p class="author-name">Sarah Miller</p>
+                            <p class="author-title">Product Manager, Data Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "The analysis provided was thorough, clear, and actionable. Charles is a true 
+                        data expert."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div>
+                            <p class="author-name">Michael Chen</p>
+                            <p class="author-title">Analytics Lead, Finance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Charles Natasha</h3>
+                    <p>Data Analyst | Turning Data into Insights</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Social</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Charles Natasha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
