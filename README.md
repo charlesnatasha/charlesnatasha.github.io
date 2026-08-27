@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScript. Perfect for showcasing your data analysis projects and skills to potential employers and clients.
 
-## 🎨 Features
+## Features
 
 - **Responsive Design**: Mobile-friendly layout that works on all devices
 - **Dark/Light Mode**: Toggle between dark and light themes with preference saving
@@ -16,19 +16,19 @@ A modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScr
 - **Modern Typography**: Professional and clean font choices
 - **Fast Performance**: Optimized CSS/JS with no external dependencies
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 My Portfolio/
-├── index.html          # Main HTML file with all sections
-├── style.css           # All styling and responsive design
-├── script.js           # JavaScript for interactivity
-├── README.md           # This file
-└── assets/
-    └── portfolio.pdf   # Your CV (add this file)
+|-- index.html          # Main HTML file with all sections
+|-- style.css           # All styling and responsive design
+|-- script.js           # JavaScript for interactivity
+|-- README.md           # This file
+`-- assets/
+    `-- portfolio.pdf   # Your CV (add this file)
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Open the Website Locally
 
@@ -36,7 +36,7 @@ Simply open `index.html` in your web browser:
 
 ```bash
 # Option 1: Double-click the file
-# Option 2: Right-click → Open with → Browser
+# Option 2: Right-click -> Open with -> Browser
 # Option 3: Use a local server (recommended)
 python -m http.server 8000
 # Then visit: http://localhost:8000
@@ -65,7 +65,7 @@ Update copyright year and contact information
 
 ---
 
-## 🎯 Detailed Customization Guide
+## Detailed Customization Guide
 
 ### 1. **Update Personal Information**
 
@@ -132,7 +132,7 @@ For each project, update:
 The **Skills Section** (index.html, lines 145-195):
 
 Each skill card contains:
-- **Icon**: Change the emoji (📊, 🐍, etc.)
+- **Icon**: Change the icon as needed
 - **Title**: Skill name
 - **Description**: What you can do with this skill
 - **Progress Bar**: Update the `style="width: XX%"` to reflect your proficiency (0-100%)
@@ -140,7 +140,7 @@ Each skill card contains:
 Example:
 ```html
 <div class="skill-card">
-    <div class="skill-icon">📊</div>  <!-- Change emoji -->
+    <div class="skill-icon">[icon]</div>  <!-- Change icon -->
     <h3>Excel</h3>  <!-- Skill name -->
     <p class="skill-description">Advanced formulas, PivotTables, Dashboards</p>
     <div class="progress-bar">
@@ -165,8 +165,8 @@ Replace the paragraphs with your own story:
 
 Update the **values list** with your core values:
 ```html
-<li>📊 Data-Driven Decision Making</li>
-<li>🎯 Your Value Here</li>
+<li>Data-Driven Decision Making</li>
+<li>Your Value Here</li>
 ```
 
 Update **statistics** (lines ~120-135):
@@ -184,8 +184,8 @@ Update **statistics** (lines ~120-135):
 1. Create an `assets` folder if it doesn't exist:
 ```
 My Portfolio/
-└── assets/
-    └── portfolio.pdf  ← Add your CV here
+`-- assets/
+    `-- portfolio.pdf  <- Add your CV here
 ```
 
 2. The download button in the hero section will automatically work:
@@ -300,7 +300,7 @@ All spacing uses variables for consistency:
 
 1. Create a GitHub repository named `portfolio`
 2. Push your files to the repository
-3. Go to **Settings → Pages**
+3. Go to **Settings -> Pages**
 4. Select `main` branch as source
 5. Your site will be live at: `https://username.github.io/portfolio`
 
@@ -316,7 +316,7 @@ Use any web hosting provider (GoDaddy, Bluehost, etc.) and upload files via FTP.
 
 ---
 
-## 📱 Mobile Responsiveness
+## Mobile Responsiveness
 
 The website is fully responsive and tested on:
 - Desktop (1920px and above)
@@ -337,7 +337,7 @@ All breakpoints are defined in `style.css` (lines ~600+):
 
 ---
 
-## 🔧 Advanced Customization
+## Advanced Customization
 
 ### Add Custom Fonts from Google Fonts
 
@@ -382,17 +382,17 @@ Simply duplicate a project card HTML and update:
 
 ---
 
-## 💡 Tips & Best Practices
+## Tips & Best Practices
 
-✅ **Do:**
+**Do:**
 - Keep descriptions concise and impactful
-- Use consistent emoji for visual appeal
+- Use consistent visual styling
 - Update statistics regularly
 - Add real project links
 - Test on mobile before deploying
 - Keep the design clean and professional
 
-❌ **Don't:**
+**Don't:**
 - Overcrowd sections with too much content
 - Use too many colors (stick to 2-3 main colors)
 - Leave placeholder text in production
@@ -401,7 +401,7 @@ Simply duplicate a project card HTML and update:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Issue: Styles not loading
 - **Solution**: Make sure `style.css` is in the same folder as `index.html`
@@ -409,7 +409,7 @@ Simply duplicate a project card HTML and update:
 
 ### Issue: JavaScript not working
 - **Solution**: Ensure `script.js` is in the same folder
-- Check browser console for errors (F12 → Console)
+- Check browser console for errors (F12 -> Console)
 
 ### Issue: Contact form not working
 - **Solution**: The form uses mailto links. Make sure recipient email is valid:
@@ -425,23 +425,23 @@ Simply duplicate a project card HTML and update:
 
 ---
 
-## 📚 Resources
+## Resources
 
 - **Colors**: [coolors.co](https://coolors.co) - Generate color palettes
 - **Fonts**: [fonts.google.com](https://fonts.google.com) - Free fonts
-- **Icons**: [emoji-cheat-sheet.com](https://emoji-cheat-sheet.com) - Emoji reference
+- **Icons**: Use accessible HTML symbols or an icon library if needed
 - **Gradients**: [uigradients.com](https://uigradients.com) - Beautiful gradients
 - **Hosting**: [netlify.com](https://netlify.com), [github.com](https://github.com)
 
 ---
 
-## 📄 License
+## License
 
 This portfolio template is free to use and modify. Feel free to customize it for your personal or professional use.
 
 ---
 
-## 🎓 Customization Checklist
+## Customization Checklist
 
 - [ ] Update your name and contact information
 - [ ] Add your real projects (3-4 minimum)
@@ -456,7 +456,7 @@ This portfolio template is free to use and modify. Feel free to customize it for
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 1. **Customize everything** using this guide
 2. **Add your projects** with GitHub links
@@ -466,7 +466,7 @@ This portfolio template is free to use and modify. Feel free to customize it for
 
 ---
 
-## 📞 Support
+## Support
 
 For issues or questions:
 1. Check the Troubleshooting section
@@ -476,7 +476,7 @@ For issues or questions:
 
 ---
 
-## ✨ Final Notes
+## Final Notes
 
 This template is designed to be:
 - **Easy to customize** - Simple HTML structure
@@ -485,7 +485,7 @@ This template is designed to be:
 - **Accessible** - ARIA labels and keyboard navigation
 - **Professional** - Modern design standards
 
-Enjoy your new portfolio website! 🎉
+Enjoy your new portfolio website!
 
 ---
 
