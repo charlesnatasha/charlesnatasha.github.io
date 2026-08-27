@@ -129,7 +129,15 @@ section { padding: var(--spacing-xxl) 0; }
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg); }
 .skill-card { background-color: var(--bg-primary); padding: var(--spacing-lg); border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow-md); transition: all var(--transition-base); border: 2px solid transparent; }
 .skill-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--color-accent); }
-.skill-icon { font-size: 3rem; margin-bottom: var(--spacing-md); display: block; }
+.skill-icon { width: 64px; height: 64px; margin: 0 auto var(--spacing-md); display: flex; align-items: center; justify-content: center; }
+.app-icon { width: 56px; height: 56px; display: block; transition: transform var(--transition-fast); }
+.skill-card:hover .app-icon { transform: scale(1.08) rotate(-3deg); }
+.excel-icon { color: #21a366; }
+.sql-icon { color: #2775bd; }
+.python-icon { color: #3776ab; }
+.powerbi-icon { color: #f2b705; }
+.tools-icon { color: var(--color-accent); }
+.statistics-icon { color: #e06c9f; }
 .skill-card h3 { font-size: var(--font-size-lg); margin-bottom: var(--spacing-sm); color: var(--text-primary); }
 .skill-description { color: var(--text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--spacing-md); }
 .progress-bar { background-color: var(--bg-tertiary); height: 8px; border-radius: var(--radius-full); overflow: hidden; margin-bottom: var(--spacing-sm); }
