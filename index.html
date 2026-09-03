@@ -6,7 +6,7 @@
     <title>Charles Chioma Natasha - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -17,7 +17,7 @@
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -55,9 +55,17 @@
                 I specialize in Excel, SQL, Python, and Power BI to transform complex data into meaningful insights and business-ready decisions.
             </p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="projects.html" class="project-shortcut" aria-label="Open projects page" title="Open projects page">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+                        <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+                        <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+                        <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+                    </svg>
+                    <span>Projects</span>
+                </a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                <a href="assets/Resume.pdf" class="btn btn-outline" download>Download CV</a>
+                <a href="assets/Resume%20%281%29.pdf" class="btn btn-outline" download>Download CV</a>
             </div>
         </div>
         <div class="hero-visual">
@@ -108,16 +116,15 @@
                 <article class="experience-card">
                     <div class="experience-heading">
                         <div>
-                            <h3>Administrative Assistant</h3>
-                            <p class="experience-company">Stitches Africa | Remote / Lagos, NG</p>
+                            <h3>Administrative &amp; Operations</h3>
+                            <p class="experience-company">Stitches Africa | Hybrid / Lagos, NG</p>
                         </div>
                         <span class="experience-date">June 2026 - Present</span>
                     </div>
                     <ul class="experience-list">
-                        <li>Coordinate day-to-day administrative operations and cross-functional communication across a fast-paced remote team.</li>
-                        <li>Clean, transform, and manage client and sales datasets, improving reporting accuracy by 15%.</li>
-                        <li>Maintain lead-generation tracking systems and monitor performance across 50+ corporate accounts.</li>
-                        <li>Use Slack, Zoom, and cloud tools to support asynchronous handoffs and operational workflows.</li>
+                        <li>Manage logistics, schedule vendor pickups with DHL and other courier services, and oversee office supply procurement.</li>
+                        <li>Coordinate HR onboarding and documentation for new hires while supporting cross-functional administrative operations.</li>
+                        <li>Maintain dynamic lead-generation tracking systems and monitor outreach performance across 50+ high-value corporate accounts.</li>
                     </ul>
                 </article>
                 <article class="experience-card">
@@ -131,8 +138,7 @@
                     <ul class="experience-list">
                         <li>Designed and maintained a normalized logistics database with 8 tables in 3NF.</li>
                         <li>Authored 18+ SQL queries using joins, aggregations, and subqueries to evaluate delivery metrics and bottlenecks.</li>
-                        <li>Resolved missing values, structural discrepancies, and formatting errors using Advanced Excel.</li>
-                        <li>Translated shipping data into daily executive dashboards and actionable operational summaries.</li>
+                        <li>Cleaned shipping data with Advanced Excel and translated it into executive dashboards and actionable operational summaries.</li>
                     </ul>
                 </article>
             </div>
@@ -268,6 +274,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-card" data-category="python">
+                    <div class="project-image">
+                        <img src="assets/dashboard-screenshot.png" alt="E-commerce analytics dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Automated Data Pipeline &amp; Analytics Dashboard</h3>
+                        <p>Built an end-to-end Python ETL pipeline to clean and transform 5,000+ e-commerce transactions, then created a professional Power BI dashboard with real-time KPIs. Analyzed $4.9M in revenue and processed 5,000 customer records across 8 interactive visualizations.</p>
+                        <div class="project-tools">
+                            <span class="tool-badge">Python</span>
+                            <span class="tool-badge">Pandas</span>
+                            <span class="tool-badge">Power BI</span>
+                            <span class="tool-badge">ETL</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/charlesnatasha/ecommerce-data-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-card" data-category="web">
                     <div class="project-image">
                         <img src="assets/habit_tracker.png" alt="Habit tracker calendar interface">
@@ -372,6 +396,58 @@
                             </a>
                         </div>
                         <div class="gallery-label">SQL Analytics</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <a href="assets/dashboard-screenshot.png" target="_blank" rel="noopener" aria-label="View full E-commerce Analytics Dashboard image">
+                                <img src="assets/dashboard-screenshot.png" alt="E-commerce Analytics Dashboard">
+                                <div class="gallery-overlay">
+                                    <p>E-commerce Analytics Dashboard</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery-label">Power BI Dashboard</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <a href="assets/sample1.png" target="_blank" rel="noopener" aria-label="View full Python analysis sample 1 image">
+                                <img src="assets/sample1.png" alt="Python Analysis Sample 1">
+                                <div class="gallery-overlay">
+                                    <p>Python Analysis Sample 1</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery-label">Python Analysis</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <a href="assets/sample%202.png" target="_blank" rel="noopener" aria-label="View full Python analysis sample 2 image">
+                                <img src="assets/sample%202.png" alt="Python Analysis Sample 2">
+                                <div class="gallery-overlay">
+                                    <p>Python Analysis Sample 2</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery-label">Python Analysis</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-card">
+                        <div class="gallery-image-wrapper">
+                            <a href="assets/sample%203.png" target="_blank" rel="noopener" aria-label="View full Python analysis sample 3 image">
+                                <img src="assets/sample%203.png" alt="Python Analysis Sample 3">
+                                <div class="gallery-overlay">
+                                    <p>Python Analysis Sample 3</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery-label">Python Analysis</div>
                     </div>
                 </div>
             </div>
@@ -487,7 +563,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>

@@ -76,6 +76,9 @@ hamburger.addEventListener('click', () => {
 
 navLinks.forEach((link) => {
     link.addEventListener('click', (event) => {
+        if (!link.getAttribute('href').startsWith('#')) {
+            return;
+        }
         event.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
         scrollToSection(targetId);

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Charles Chioma Natasha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="projects-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html#hero">Charles Chioma Natasha</a></div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <div class="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="projects-page-header">
+            <div class="container">
+                <h1 class="section-title">Selected Projects</h1>
+                <p class="projects-page-intro">A focused collection of data analysis, data engineering, dashboard, and web development work.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="powerbi">Power BI</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="sql">SQL</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="powerbi">
+                        <div class="project-image"><img src="assets/sales-dashboard-preview.png.png" alt="Sales Dashboard"></div>
+                        <div class="project-content">
+                            <h3>Sales Analytics Dashboard</h3>
+                            <p>Built an interactive dashboard tracking quarterly sales, regional trends, and KPI performance with clear profitability visibility.</p>
+                            <div class="project-tools"><span class="tool-badge">Power BI</span><span class="tool-badge">Power Query</span><span class="tool-badge">DAX</span></div>
+                            <div class="project-buttons"><a href="https://github.com/charlesnatasha/Sales-dashboard-" target="_blank" rel="noopener" class="btn btn-small btn-primary">GitHub</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="python">
+                        <div class="project-image"><img src="assets/churn_tenure.png" alt="Churn Analysis"></div>
+                        <div class="project-content">
+                            <h3>Customer Churn Analysis</h3>
+                            <p>Analyzed 7,000+ customer records to identify churn risk and retention opportunities using Python and visual analysis.</p>
+                            <div class="project-tools"><span class="tool-badge">Python</span><span class="tool-badge">Pandas</span><span class="tool-badge">Matplotlib</span></div>
+                            <div class="project-buttons"><a href="https://github.com/charlesnatasha/customer-churn-analysis" target="_blank" rel="noopener" class="btn btn-small btn-primary">GitHub</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="sql">
+                        <div class="project-image"><img src="assets/courier-success-rate.png" alt="Logistics Database"></div>
+                        <div class="project-content">
+                            <h3>Logistics Database Management System</h3>
+                            <p>Designed a normalized logistics database with 8 tables in 3NF and authored 18+ SQL queries to support performance analysis.</p>
+                            <div class="project-tools"><span class="tool-badge">SQL</span><span class="tool-badge">MySQL</span><span class="tool-badge">Normalization</span></div>
+                            <div class="project-buttons"><a href="https://github.com/charlesnatasha/logistics-database" target="_blank" rel="noopener" class="btn btn-small btn-primary">GitHub</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="powerbi">
+                        <div class="project-image"><img src="assets/Executive dashboard.png" alt="Executive Dashboard"></div>
+                        <div class="project-content">
+                            <h3>Executive Scorecard Dashboard</h3>
+                            <p>Built an executive-level dashboard consolidating key business metrics and KPIs into a single, real-time view for strategic decision-making.</p>
+                            <div class="project-tools"><span class="tool-badge">Power BI</span><span class="tool-badge">Data Visualization</span><span class="tool-badge">Business Intelligence</span></div>
+                            <div class="project-buttons"><a href="https://github.com/charlesnatasha/power-bi-executive-scorecard.git" target="_blank" rel="noopener" class="btn btn-small btn-primary">GitHub</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="python">
+                        <div class="project-image"><img src="assets/dashboard-screenshot.png" alt="E-commerce analytics dashboard"></div>
+                        <div class="project-content">
+                            <h3>Automated Data Pipeline &amp; Analytics Dashboard</h3>
+                            <p>Built an end-to-end Python ETL pipeline to clean and transform 5,000+ e-commerce transactions, then created a Power BI dashboard with real-time KPIs. Analyzed $4.9M in revenue across 8 interactive visualizations.</p>
+                            <div class="project-tools"><span class="tool-badge">Python</span><span class="tool-badge">Pandas</span><span class="tool-badge">Power BI</span><span class="tool-badge">ETL</span></div>
+                            <div class="project-buttons"><a href="https://github.com/charlesnatasha/ecommerce-data-pipeline" target="_blank" rel="noopener" class="btn btn-small btn-primary">GitHub</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="web">
+                        <div class="project-image"><img src="assets/habit_tracker.png" alt="Habit tracker calendar interface"></div>
+                        <div class="project-content">
+                            <h3>Habit Tracker Calendar</h3>
+                            <p>An interactive web application for tracking daily habits with a visual calendar interface and persistent local storage.</p>
+                            <div class="project-tools"><span class="tool-badge">Vanilla JavaScript</span><span class="tool-badge">HTML/CSS</span><span class="tool-badge">localStorage</span></div>
+                            <div class="project-buttons"><a href="https://github.com/charlesnatasha/Habit-tracker-calender" target="_blank" rel="noopener" class="btn btn-small btn-primary">GitHub</a><a href="https://charlesnatasha.github.io/Habit-tracker-calender/habittracker.html" target="_blank" rel="noopener" class="btn btn-small btn-secondary">Live Demo</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Work Samples Gallery</h2>
+                <p class="gallery-subtitle">Visual snapshots from my data analysis projects</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/sales-dashboard-preview.png.png" target="_blank" rel="noopener" aria-label="View full Sales Analytics Dashboard image"><img src="assets/sales-dashboard-preview.png.png" alt="Sales Dashboard Preview"><div class="gallery-overlay"><p>Sales Analytics Dashboard</p></div></a></div><div class="gallery-label">Power BI Dashboard</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/Executive dashboard.png" target="_blank" rel="noopener" aria-label="View full Executive Dashboard image"><img src="assets/Executive dashboard.png" alt="Executive Dashboard Preview"><div class="gallery-overlay"><p>Executive Dashboard</p></div></a></div><div class="gallery-label">Power BI Dashboard</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/churn_tenure.png" target="_blank" rel="noopener" aria-label="View full Customer Churn Analysis image"><img src="assets/churn_tenure.png" alt="Churn Tenure Analysis"><div class="gallery-overlay"><p>Customer Churn Analysis</p></div></a></div><div class="gallery-label">Python Analysis</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/churn_contract.png" target="_blank" rel="noopener" aria-label="View full Contract Churn Metrics image"><img src="assets/churn_contract.png" alt="Churn Contract Analysis"><div class="gallery-overlay"><p>Contract Churn Metrics</p></div></a></div><div class="gallery-label">Data Visualization</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/churn_payment.png" target="_blank" rel="noopener" aria-label="View full Payment Churn Patterns image"><img src="assets/churn_payment.png" alt="Churn Payment Analysis"><div class="gallery-overlay"><p>Payment Churn Patterns</p></div></a></div><div class="gallery-label">Analytics Report</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/courier-success-rate.png" target="_blank" rel="noopener" aria-label="View full Courier Success Metrics image"><img src="assets/courier-success-rate.png" alt="Logistics Success Rate"><div class="gallery-overlay"><p>Courier Success Metrics</p></div></a></div><div class="gallery-label">SQL Analytics</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/dashboard-screenshot.png" target="_blank" rel="noopener" aria-label="View full E-commerce Analytics Dashboard image"><img src="assets/dashboard-screenshot.png" alt="E-commerce Analytics Dashboard"><div class="gallery-overlay"><p>E-commerce Analytics Dashboard</p></div></a></div><div class="gallery-label">Power BI Dashboard</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/sample1.png" target="_blank" rel="noopener" aria-label="View full Python analysis sample 1 image"><img src="assets/sample1.png" alt="Python Analysis Sample 1"><div class="gallery-overlay"><p>Python Analysis Sample 1</p></div></a></div><div class="gallery-label">Python Analysis</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/sample%202.png" target="_blank" rel="noopener" aria-label="View full Python analysis sample 2 image"><img src="assets/sample%202.png" alt="Python Analysis Sample 2"><div class="gallery-overlay"><p>Python Analysis Sample 2</p></div></a></div><div class="gallery-label">Python Analysis</div></div></div>
+                    <div class="gallery-item"><div class="gallery-card"><div class="gallery-image-wrapper"><a href="assets/sample%203.png" target="_blank" rel="noopener" aria-label="View full Python analysis sample 3 image"><img src="assets/sample%203.png" alt="Python Analysis Sample 3"><div class="gallery-overlay"><p>Python Analysis Sample 3</p></div></a></div><div class="gallery-label">Python Analysis</div></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container"><div class="footer-content"><div class="footer-section"><h3>Charles Chioma Natasha</h3><p>Data &amp; Operations Analyst | Freelancer</p></div><div class="footer-section"><h4>Quick Links</h4><ul><li><a href="index.html#about">About</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="projects.html">Projects</a></li><li><a href="index.html#contact">Contact</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Charles Chioma Natasha. All rights reserved.</p></div></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>
