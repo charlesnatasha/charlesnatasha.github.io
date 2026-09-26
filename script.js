@@ -65,13 +65,10 @@ function updateThemeIcon() {
     const isDarkMode = document.body.classList.contains('dark-mode');
     const moonIcon = themeToggle.querySelector('.moon-icon');
     const sunIcon = themeToggle.querySelector('.sun-icon');
-    if (isDarkMode) {
-        moonIcon.style.display = 'none';
-        sunIcon.style.display = 'block';
-    } else {
-        moonIcon.style.display = 'block';
-        sunIcon.style.display = 'none';
-    }
+    moonIcon.hidden = isDarkMode;
+    sunIcon.hidden = !isDarkMode;
+    moonIcon.style.display = isDarkMode ? 'none' : '';
+    sunIcon.style.display = isDarkMode ? '' : 'none';
 }
 
 const savedTheme = localStorage.getItem('theme');
