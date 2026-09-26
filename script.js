@@ -1,3 +1,25 @@
+function createFallingClouds() {
+    const starField = document.createElement('div');
+    starField.className = 'falling-clouds';
+    starField.setAttribute('aria-hidden', 'true');
+
+    const cloudSymbols = ['☁', '☁', '☁', '☁', '☁'];
+    for (let index = 0; index < 28; index += 1) {
+        const cloud = document.createElement('span');
+        cloud.className = 'falling-cloud';
+        cloud.textContent = cloudSymbols[index % cloudSymbols.length];
+        cloud.style.left = `${(index * 37) % 100}%`;
+        cloud.style.animationDelay = `${(index * 0.47) % 9}s`;
+        cloud.style.animationDuration = `${9 + (index % 5)}s`;
+        cloud.style.fontSize = `${0.8 + (index % 4) * 0.2}rem`;
+        starField.appendChild(cloud);
+    }
+
+    document.body.prepend(starField);
+}
+
+createFallingClouds();
+
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
