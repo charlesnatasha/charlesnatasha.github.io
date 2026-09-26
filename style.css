@@ -583,7 +583,7 @@ body.dark-mode .progress-text {
     color: #f4ffff;
 }
 
-.navbar,
+.navbar { position: relative; z-index: 200; }
 main,
 .footer { position: relative; z-index: 1; }
 
