@@ -161,8 +161,8 @@ section { padding: var(--spacing-xxl) 0; }
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--spacing-lg); }
 .project-card { background-color: var(--bg-primary); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); transition: all var(--transition-base); opacity: 1; animation: fadeIn 0.5s ease; }
 .project-card.hidden { display: none; opacity: 0; }
-.project-image { width: 100%; height: 200px; background: var(--color-accent); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
-.project-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.project-image { width: 100%; height: 200px; background: #ffffff; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+.project-image img { width: 100%; height: 100%; object-fit: contain; display: block; background: #ffffff; }
 .project-placeholder { font-size: var(--font-size-lg); color: white; font-weight: 600; }
 .project-image::before { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.3); }
 .project-card:hover .project-image::before { background: rgba(0, 0, 0, 0); }
